@@ -1,6 +1,6 @@
 # Bombastic Bullet Dodger
 
-# Team menbers:
+# Team members:
 Huang Mao Dian Heinz 3035844077
 
 Dave Henokh Liong 3035902415
