@@ -2,7 +2,6 @@
 
 # Team members:
 Huang Mao Dian Heinz 3035844077
-
 Dave Henokh Liong 3035902415
 
 # Description
@@ -14,6 +13,10 @@ The player will dodge incoming bullets from all sides of the map by controlling 
 3. The score is calculated by the time the player survives with other possible bonuses.
 4. Don’t touch the bullets! 1 bullet deals 1 heart.
 5. There will be a chance for the player to recover their hearts by catching health recovery items.
+6. There are three difficulties: easy, medium, and hard:
+- In easy mode, the maximum bullets that can be generated in the map is 15, and the starting health of the player is 3.
+- In medium mode, the maximum bullets that can be generated in the map is 25, and the starting health of the player is 3.
+- In hard mode, the maximum bullets that can be generated in the map is 25, and the starting health of the player is 1.
 
 
 # Features
