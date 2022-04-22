@@ -21,10 +21,29 @@ The player will dodge incoming bullets from all sides of the map by controlling 
 8. 
 
 
-# Features
+# Features Implemented
+1. Generation of random game sets or events: 
+- the starting position of the bullet, its speed, its direction, and its size, and the time when it spawns.
+- the position of healing items and the time when it spawns.
+- the player's starting position
 
-1. The random element of this game will be the bullet speed and direction.
-2. The data structure for storing game status is arrays. The array is going to be used to store the scores and the random number that will become the “seed” for the bullet direction.
-3. The memory used to store the bullets will be dynamic-memory allocated.
-4. The input is the latest player’s score and the output is the high score after the game ends.
-5. We are going to put each feature in different files and import them together in the main file which will be run.
+2. Data structures for storing game status: 
+The data structure for storing game status is arrays. The array is going to be used for the map. and the random number that will become the “seed” for the bullet direction.
+
+3. Dynamic memory management: 
+We use vectors to store how many bullets and healing items have spawned, thus making it dynamic-memory allocated.
+
+4. File input/output:
+The input is the latest player’s score and the output is the high score after the game ends.
+
+5. Program codes in multiple files:
+Files involved in coding are seperated in three files. Two .cpp files: "game.cpp", "main.cpp", and 1 .h file: "game.h". "game.cpp" is where the all the functions involved in the game generation are defined. "game.h" is the header file where all the classes are defined. "main.cpp" is where all the functions are called. Additionally, there are makefile, and .txt files to store the score of the players.
+
+# Compilation and execution instructions
+1. Use makefile to make the game by typing in terminal: "make game".
+2. Initialize the game by typing: "./game".
+3. A menu will appear, and you will be asked to press 'E' to start the game.
+4. After scoreboard is printed, you will be asked to press '1' to pick easy mode, '2' to pick medium mode, and '3' to pick hard mode.
+5. A countdown will start, at which point you could prepare yourself by putting your hands in WASD.
+6. When the game starts, press WASD to control player movements
+7. When the game ends, press 'E' to exit the game.
