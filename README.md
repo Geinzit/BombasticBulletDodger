@@ -4,19 +4,21 @@
 Huang Mao Dian Heinz 3035844077
 Dave Henokh Liong 3035902415
 
-# Description
-The player will dodge incoming bullets from all sides of the map by controlling their body. The game’s difficulty increases gradually (in which the bullets will be faster and bigger) as the player continues to survive. The player has three hearts, and the game ends when the player gets hit with three bullets (1 bullet deals 1 heart). During the game, random items can appear on the map, such as health recovery items.
+# General Description
+The player will dodge incoming bullets from all sides of the map by controlling their body. The player has three hearts, and the game ends when the player gets hit with three bullets (1 bullet deals 1 heart). During the game, healing items will randomly spawn, which will increase the player's heart by 1.
 
 # Game rules: 
-1. Use WASD to control your movements
-2. A player has three hearts, and when the player ran out of hearts, the game ends.
-3. The score is calculated by the time the player survives with other possible bonuses.
-4. Don’t touch the bullets! 1 bullet deals 1 heart.
-5. There will be a chance for the player to recover their hearts by catching health recovery items.
+1. Use WASD to control your movements.
+2. In the start of the game, a player has three hearts. When the player runs out of hearts, the game ends. 
+3. Don’t touch the bullets! 1 bullet deals 1 heart.
+4. There will be a chance for the player to recover their health by catching healing items that will randomly spawn on the map. However, the maximum number of health a player can have is 7. When the number is reached, no healing items will spawn.
+5. The score is calculated by how much time the player survives.
 6. There are three difficulties: easy, medium, and hard:
-- In easy mode, the maximum bullets that can be generated in the map is 15, and the starting health of the player is 3.
-- In medium mode, the maximum bullets that can be generated in the map is 25, and the starting health of the player is 3.
-- In hard mode, the maximum bullets that can be generated in the map is 25, and the starting health of the player is 1.
+- In easy mode, the maximum bullets that can be generated in the map is 5, and the bullet sizes will generally be smaller.
+- In medium mode, the maximum bullets that can be generated in the map is 15, and the bullet sizes will generally be bigger than easy mode, but smaller than hard mode.
+- In hard mode, the maximum bullets that can be generated in the map is 25, and the bullet sizes will generally be bigger.
+7. There is a time of invicibility when players get hit, meaning that the player will not lose any hearts eventhough they get hit by bullets.
+8. 
 
 
 # Features
