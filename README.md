@@ -11,7 +11,7 @@ The player will dodge incoming bullets from all sides of the map by controlling 
 1. Use WASD to control the player movements (the character '@').
 2. In the start of the game, a player has three hearts. When the player runs out of hearts, the game ends. 
 3. Don’t touch the bullets (the character '\*')! 1 bullet deals 1 heart.
-4. There will be a chance for the player to recover their health by catching healing items (the character '$') that will randomly spawn on the map. However, the maximum number of health a player can have is 7. When the number is reached, no healing items will spawn.
+4. There will be a chance for the player to recover their health by catching healing items (the character '$') that will randomly spawn on the map. If caught, it will increase the health of the player by 1.
 5. Be quick in getting the healing items! The healing items will disappear if a bullet passes through it!
 6. The score is calculated by how much time the player survives.
 7. There are three difficulties: easy, medium, and hard:
