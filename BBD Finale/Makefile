@@ -14,4 +14,4 @@ game: main.o game.o
 clean:
 	rm -f game game.o main.o
 
-.PHONY: clean run
+.PHONY: clean
