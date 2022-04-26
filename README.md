@@ -5,7 +5,7 @@ Huang Mao Dian Heinz 3035844077
 Dave Henokh Liong 3035902415
 
 # General Description
-The player will dodge incoming bullets from all sides of the map by controlling their body. The player has three hearts, and the game ends when the player gets hit with three bullets (1 bullet deals 1 heart). During the game, healing items will randomly spawn, which will increase the player's heart by 1. After the game ends, the score of the player is printed, which is calculated by how much time the player survives. Goodluck on the battlefield!
+The player will dodge incoming bullets from all sides of the map by controlling their body. The player has three hearts, and the game ends when the player's health reaches zero (1 bullet deals 1 heart). During the game, healing items will randomly spawn, which will increase the player's heart by 1. After the game ends, the score of the player is printed, which is calculated by how much time the player survives. Goodluck on the battlefield!
 
 # Game rules: 
 1. Use WASD to control the player movements (the character '@').
@@ -18,7 +18,7 @@ The player will dodge incoming bullets from all sides of the map by controlling 
 - In easy mode, the maximum bullets that can be generated in the map is 5, and the bullet sizes will generally be smaller.
 - In medium mode, the maximum bullets that can be generated in the map is 15, and the bullet sizes will generally be bigger than easy mode, but smaller than hard mode.
 - In hard mode, the maximum bullets that can be generated in the map is 25, and the bullet sizes will generally be bigger.
-8. There is a time of invisibility when players get hit, meaning that the player will not lose any hearts eventhough they get hit by bullets. The time of invisibility is 5 iterations, and is denoted by "You've been hit!!" message, i.e. you are invisible if there is a "You've been hit!!" message until it disappears.
+8. There is a time of invincibility when players get hit, meaning that the player will not lose any hearts even though they get hit by bullets. The time of invincibility is 5 iterations, and is denoted by "You've been hit!!" message, i.e. you are invincible if there is a "You've been hit!!" message until it disappears.
 
 # Features Implemented
 1. Generation of random game sets or events: 
@@ -30,10 +30,11 @@ The player will dodge incoming bullets from all sides of the map by controlling 
 The data structure for storing game status is arrays. The array is going to be used for storing the map and its entities. There is also a string array to store the scoreboard file names, to categorize which score should be included in which file (in easy mode, score will be stored in "Scoreboard_Easy.txt", and so on.
 
 3. Dynamic memory management: 
-We use vectors to store how many bullets and healing items have spawned and destroyed, thus making it dynamic-memory allocated.
+We use vectors to store how many bullets and healing items have spawned and destroyed, thus making it dynamic-memory allocated. And also pointers that utilize dynamic memory management to create new Healing Items.
 
 4. File input/output:
 The input is the player's keypress to start the game, pick difficulty, control the player's movements, and exit the game. The output is the printed menu, updated map every iteration, and score of the player which is stored in a seperate file. 
+The score of each game is stored in separate files under each difficulty, and the game will read inputs from the file to produce the top score.
 
 5. Program codes in multiple files:
 Files involved in coding are seperated in three files. Two .cpp files: "game.cpp", "main.cpp", and 1 .h file: "game.h". "game.cpp" is where the all the functions involved in the game generation are defined. "game.h" is the header file where all the classes are defined. "main.cpp" is where all the functions are called. Additionally, there are makefile, and .txt files to store the score of the players.
