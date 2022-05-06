@@ -49,3 +49,6 @@ Files involved in coding are seperated in three files. Two .cpp files: "game.cpp
 7. When the game starts, press WASD to control player movements. Dodge the bullets!
 8. When the game ends, press 'E' to exit the game.
 9. To remove the game and .o files, type in terminal "make clean".
+
+# Additional notes
+Comments of commits in GitHub can be shown by clicking the total commits and looking at the individual comments.
